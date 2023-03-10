@@ -1,10 +1,19 @@
 ﻿/*- menu-btn -*/
-var siteToggle = $('.menu-btn'),
+var siteBtn = $('.menu-btn'),
   siteMenu= $('.main-nav');
 
-siteToggle.on('click', function(){
+siteBtn.on('click', function(){
   $(this).toggleClass('open');
   siteMenu.toggleClass('show');
+});
+
+/*- color-btn -*/
+var colorBtn = $('.color-btn'),
+  colorClass= $('body');
+
+colorBtn.on('click', function(){
+  $(this).toggleClass('active');
+  colorClass.toggleClass('dark-color');
 });
 
 /*- partners-slider -*/
