@@ -26,6 +26,35 @@ var swiper = new Swiper('.partners-slider', {
     delay: 2500,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    0: {
+      spaceBetween: 38,
+    },
+    952: {
+      spaceBetween: 50,
+    },
+    1330: {
+      spaceBetween: 100,
+    },
+  },
+});
+
+/*- reviews-slider -*/
+var swiper = new Swiper('.reviews-slider', {
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    952: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.reviews-slider .swiper-pagination',
+        clickable: true,
+      },
+    },
+  },
 });
 
 /*- person-slider -*/
@@ -34,6 +63,10 @@ var swiper = new Swiper('.person-slider', {
   centeredSlides: true,
   spaceBetween: 30,
   loop: true,
+  pagination: {
+    el: '.person-slider .swiper-pagination',
+    clickable: true,
+  },
   navigation: {
     nextEl: '.person-slider .swiper-button-next',
     prevEl: '.person-slider .swiper-button-prev',
@@ -46,6 +79,10 @@ var swiper = new Swiper('.work-slider', {
   navigation: {
     nextEl: '.work-slider-wrap .swiper-button-next',
     prevEl: '.work-slider-wrap .swiper-button-prev',
+  },
+  pagination: {
+    el: '.work-slider .swiper-pagination',
+    clickable: true,
   },
 });
 
