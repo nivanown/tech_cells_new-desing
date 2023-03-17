@@ -41,18 +41,20 @@ var swiper = new Swiper('.partners-slider', {
 
 /*- reviews-slider -*/
 var swiper = new Swiper('.reviews-slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.reviews-slider .swiper-pagination',
+    clickable: true,
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
     },
-    952: {
+    720: {
       slidesPerView: 2,
       spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.reviews-slider .swiper-pagination',
-        clickable: true,
-      },
     },
   },
 });
@@ -70,6 +72,14 @@ var swiper = new Swiper('.person-slider', {
   navigation: {
     nextEl: '.person-slider .swiper-button-next',
     prevEl: '.person-slider .swiper-button-prev',
+  },
+  breakpoints: {
+    0: {
+      spaceBetween: 20,
+    },
+    720: {
+      spaceBetween: 30,
+    },
   },
 });
 
