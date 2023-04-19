@@ -396,7 +396,7 @@
   border-radius: 18px;
   }
 
-.blog__title { 
+.blog-item__title { 
   margin: 0 0 10px;
   }
 
@@ -961,7 +961,7 @@ input[type="password"] {
   border-radius: 14px;
   }
 
-.blog__title { 
+.blog-item__title { 
   line-height: 24px;
   }
 
