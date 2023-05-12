@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="css/main.css" media="all"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all"/>
+    <link rel="stylesheet" href="css/hystmodal.min.css" media="all"/>
     <link rel="stylesheet" href="css/responsive.css" media="all"/>
 
     <link href="favicon.ico" rel="shortcut icon"/>
@@ -495,10 +496,10 @@
                                                 <h3 class="vacancy-item__title">
                                                     <a href="#">UX/UI Designer</a>
                                                 </h3>
-                                                <span class="vacancy-item__time">Full-Time, Internship</span>
+                                                <span class="work-time">Full-Time, Internship</span>
                                             </div>
                                             <div class="vacancy-item__right-col">
-                                                <span class="vacancy-item__city">Tashkent,Uzbekistan</span>
+                                                <span class="city">Tashkent,Uzbekistan</span>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -510,7 +511,7 @@
                                             </div>
                                             <div class="vacancy-item__btn-panel">
                                                 <a href="#" class="btn btn_transparent-bg btn_small-size">View Job Post</a>
-                                                <a href="#" class="btn btn_small-size">Apply</a>
+                                                <a href="#" class="btn btn_small-size" data-hystmodal="#apply-form">Apply</a>
                                             </div>
                                         </div>
                                     </div>
@@ -522,10 +523,10 @@
                                                 <h3 class="vacancy-item__title">
                                                     <a href="#">UX/UI Designer</a>
                                                 </h3>
-                                                <span class="vacancy-item__time">Full-Time, Internship</span>
+                                                <span class="work-time">Full-Time, Internship</span>
                                             </div>
                                             <div class="vacancy-item__right-col">
-                                                <span class="vacancy-item__city">Tashkent,Uzbekistan</span>
+                                                <span class="city">Tashkent,Uzbekistan</span>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -537,7 +538,7 @@
                                             </div>
                                             <div class="vacancy-item__btn-panel">
                                                 <a href="#" class="btn btn_transparent-bg btn_small-size">View Job Post</a>
-                                                <a href="#" class="btn btn_small-size">Apply</a>
+                                                <a href="#" class="btn btn_small-size" data-hystmodal="#apply-form">Apply</a>
                                             </div>
                                         </div>
                                     </div>
@@ -549,10 +550,10 @@
                                                 <h3 class="vacancy-item__title">
                                                     <a href="#">UX/UI Designer</a>
                                                 </h3>
-                                                <span class="vacancy-item__time">Full-Time, Internship</span>
+                                                <span class="work-time">Full-Time, Internship</span>
                                             </div>
                                             <div class="vacancy-item__right-col">
-                                                <span class="vacancy-item__city">Tashkent,Uzbekistan</span>
+                                                <span class="city">Tashkent,Uzbekistan</span>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -564,7 +565,7 @@
                                             </div>
                                             <div class="vacancy-item__btn-panel">
                                                 <a href="#" class="btn btn_transparent-bg btn_small-size">View Job Post</a>
-                                                <a href="#" class="btn btn_small-size">Apply</a>
+                                                <a href="#" class="btn btn_small-size" data-hystmodal="#apply-form">Apply</a>
                                             </div>
                                         </div>
                                     </div>
@@ -576,10 +577,10 @@
                                                 <h3 class="vacancy-item__title">
                                                     <a href="#">UX/UI Designer</a>
                                                 </h3>
-                                                <span class="vacancy-item__time">Full-Time, Internship</span>
+                                                <span class="work-time">Full-Time, Internship</span>
                                             </div>
                                             <div class="vacancy-item__right-col">
-                                                <span class="vacancy-item__city">Tashkent,Uzbekistan</span>
+                                                <span class="city">Tashkent,Uzbekistan</span>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -591,7 +592,7 @@
                                             </div>
                                             <div class="vacancy-item__btn-panel">
                                                 <a href="#" class="btn btn_transparent-bg btn_small-size">View Job Post</a>
-                                                <a href="#" class="btn btn_small-size">Apply</a>
+                                                <a href="#" class="btn btn_small-size" data-hystmodal="#apply-form">Apply</a>
                                             </div>
                                         </div>
                                     </div>
@@ -787,11 +788,90 @@
     </div>   
     <!-- wrapper end -->
 
+    <!-- apply-form modal Start -->
+    <div id="apply-form" class="hystmodal center-modal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button class="hystmodal__close" data-hystclose>Закрыть</button>
+                <div class="hystmodal__styled">
+                    <div class="sending-form">
+                        <div class="sending-form__content">
+                            <div class="post-panel">
+                                <div class="post-panel__left-col">
+                                    <h2 class="post-panel__title">UX/UI Designer</h2>
+                                    <span class="work-time">Full-Time, Internship</span>
+                                </div>
+                                <div class="post-panel__right-col">
+                                    <span class="city">Tashkent,Uzbekistan</span>
+                                </div>
+                            </div>
+                            <h3 class="small-title">Apply</h3>
+                            <form>
+                                <fieldset>
+                                    <ul class="sending-form__list sending-form__list_three-col">
+                                        <li>
+                                            <label for="first-name">First name</label>
+                                            <input id="first-name" type="email" placeholder="Your first name">
+                                        </li>
+                                        <li>
+                                            <label for="last-name">Last name</label>
+                                            <input id="last-name" type="email" placeholder="Your last name">
+                                        </li>
+                                        <li>
+                                            <label for="email">Email</label>
+                                            <input id="email" type="email" placeholder="Your email">
+                                        </li>
+                                        <li>
+                                            <label for="phone">Phone number</label>
+                                            <input id="phone" type="tel" placeholder="Your phone number">
+                                        </li>
+                                        <li>
+                                            <label for="profile">LinkedIn profile</label>
+                                            <input id="profile" type="text" placeholder="URL">
+                                        </li>
+                                        <li>
+                                            <label for="country">Where are you from?</label>
+                                            <input id="country" type="text" placeholder="Select your country">
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="file">Upload your CV</label>
+                                    <div class="type-file">
+                                        <div class="type-file__content">
+                                            <div class="type-file__icon">
+                                                <img src="img/bg/upload-icon.svg" alt="icon">
+                                            </div>
+                                            <span class="type-file__text">
+                                                <span class="type-file__big-text"><strong>Click to upload</strong> or drag and drop</span>
+                                                <span class="type-file__small-text">Maximum file size <strong>50 MB.</strong></span>
+                                            </span>
+                                        </div>
+                                        <input id="file" type="file">
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="comments">Additional comments</label>
+                                    <textarea id="comments" placeholder="Your additional comments"></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <button class="sending-form__btn btn btn_transparent-bg" type="submit">Apply</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- apply-form modal end -->
+
     <!-- jQuery libs -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
 
     <!-- Plugin scripts -->
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/hystmodal.min.js"></script>
 
     <!-- Scripts -->
     <script type="text/javascript" src="js/scripts.js"></script>
